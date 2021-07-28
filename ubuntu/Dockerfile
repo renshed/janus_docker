@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
-MAINTAINER Efa-GmbH <team@efa-gmbh.com>
+FROM ubuntu:18.04
+MAINTAINER Rene Monticalvo
 
 # Copy installation scripts in
 COPY *.sh ./
@@ -7,7 +7,10 @@ COPY *.sh ./
 # Prepare the system
 RUN ./install_depends.sh
 
-# Install libsrtp 2.0.0
+# Install libnice
+RUN ./libnice.sh
+
+# Install libsrtp 2.2.0
 RUN ./libsrtp.sh
 
 # Install usrsctp for data channel support
