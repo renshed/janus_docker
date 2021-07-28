@@ -1,3 +1,3 @@
 #!/bin/bash
 . ./docker_name.sh
-sudo docker build -t $DOCKER_IMAGE_NAME .
+sudo docker build -t $DOCKER_IMAGE_NAME . --pull --no-cache
