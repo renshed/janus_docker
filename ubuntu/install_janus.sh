@@ -6,4 +6,4 @@ sh autogen.sh
 make
 make install
 make configs
-## Install and Ready
+## Installed and Ready
