@@ -1,2 +1,2 @@
 #!/bin/bash
-DOCKER_IMAGE_NAME="nsw_ubuntu_janus"
+DOCKER_IMAGE_NAME="enre_janus_gateway"
